@@ -1,83 +1,87 @@
-#' filenameCase<-"D:/workspace/data/WTCCC/bd"
-#' filenameControl<-"D:/workspace/data/WTCCC/1958bc_and_nbs_for_bd"
-#' pro<-initSampleSplit(filenameCase,filenameControl)
-#' pro<-fillInformativeSnpIndexesBasedOnChisqAndData(pro)
+filenameCase<-"D:/workspace/data/WTCCC/bd"
+filenameControl<-"D:/workspace/data/WTCCC/1958bc_and_nbs_for_bd"
+pro<-initSampleSplit(filenameCase,filenameControl)
+pro<-fillInformativeSnpIndexesBasedOnChisqAndData(pro)
 
 
-#' filenameCase<-"D:/workspace/data/WTCCC/bd"
-#' filenameControl<-"D:/workspace/data/WTCCC/1958bc_and_nbs_for_bd"
-#' pro<-loadInformativeDataA(filenameCase,filenameControl)
-#' pro<-fillVi(pro)
-#' cat("oob error of this snp set is",pro$oob)
+filenameCase<-"D:/workspace/data/WTCCC/bd"
+filenameControl<-"D:/workspace/data/WTCCC/1958bc_and_nbs_for_bd"
+pro<-loadInformativeDataA(filenameCase,filenameControl)
+pro<-fillVi(pro)
+cat("oob error of this snp set is",pro$oob)
 
 
-#' filenameCase<-"D:/workspace/data/WTCCC/bd"
-#' filenameControl<-"D:/workspace/data/WTCCC/1958bc_and_nbs_for_bd"
-#' pro<-loadInformativeDataA(filenameCase,filenameControl)
-#' pro<-fillSim(pro)
+filenameCase<-"D:/workspace/data/WTCCC/bd"
+filenameControl<-"D:/workspace/data/WTCCC/1958bc_and_nbs_for_bd"
+pro<-loadInformativeDataA(filenameCase,filenameControl)
+pro<-fillSim(pro)
 
 
-#' filenameCase<-"D:/workspace/data/WTCCC/bd"
-#' filenameControl<-"D:/workspace/data/WTCCC/1958bc_and_nbs_for_bd"
-#' pro<-loadInformativeDataA(filenameCase,filenameControl)
-#' pro<-fillSim(pro)
-#' pro<-fillVi(pro)
-#' pro<-findBestSnpSubset(pro)
-#' plot(pro$solution$minOobKInG,type='l',col='red')
-#' plot(pro$solution$minOobInG,type='l',col='blue')
+filenameCase<-"D:/workspace/data/WTCCC/bd"
+filenameControl<-"D:/workspace/data/WTCCC/1958bc_and_nbs_for_bd"
+pro<-loadInformativeDataA(filenameCase,filenameControl)
+pro<-fillSim(pro)
+pro<-fillVi(pro)
+pro<-findBestSnpSubset(pro)
+plot(pro$solution$minOobKInG,type='l',col='red')
+plot(pro$solution$minOobInG,type='l',col='blue')
 
 
-#' filenameCase<-"D:/workspace/data/WTCCC/bd"
-#' filenameControl<-"D:/workspace/data/WTCCC/1958bc_and_nbs_for_bd"
-#' pro<-loadInformativeDataA(filenameCase,filenameControl)
-#' pro<-findBestSnpSubsetA(pro)
-#' pro<-fillIndexesFixed(pro)
+filenameCase<-"D:/workspace/data/WTCCC/bd"
+filenameControl<-"D:/workspace/data/WTCCC/1958bc_and_nbs_for_bd"
+pro<-loadInformativeDataA(filenameCase,filenameControl)
+pro<-findBestSnpSubsetA(pro)
+pro<-fillIndexesFixed(pro)
 
 
-#' filenameCase<-"D:/workspace/data/WTCCC/bd"
-#' filenameControl<-"D:/workspace/data/WTCCC/1958bc_and_nbs_for_bd"
-#' pro<-loadInformativeDataA(filenameCase,filenameControl)
-#' pro<-findBestSnpSubsetA(pro)
-#' pro<-fillIndexesFixed(pro)
-#' pro<-fillFixData(pro)
+filenameCase<-"D:/workspace/data/WTCCC/bd"
+filenameControl<-"D:/workspace/data/WTCCC/1958bc_and_nbs_for_bd"
+pro<-loadInformativeDataA(filenameCase,filenameControl)
+pro<-findBestSnpSubsetA(pro)
+pro<-fillIndexesFixed(pro)
+pro<-fillFixData(pro)
 
 
-#' filenameCase<-"D:/workspace/data/WTCCC/bd"
-#' filenameControl<-"D:/workspace/data/WTCCC/1958bc_and_nbs_for_bd"
-#' pro<-loadInformativeDataA(filenameCase,filenameControl)
-#' pro<-findBestSnpSubsetA(pro)
-#' pro<-fillIndexesFixed(pro)
-#' pro<-fillFixData(pro)
-#' pro<-fix2(pro)
-#' plot(density(pro$viWithShadow[(length(pro$viWithShadow)/2+1):length(pro$viWithShadow)]))
-#' abline(density(pro$viWithShadow[1:length(pro$viWithShadow)/2]),col='red')
+filenameCase<-"D:/workspace/data/WTCCC/bd"
+filenameControl<-"D:/workspace/data/WTCCC/1958bc_and_nbs_for_bd"
+pro<-loadInformativeDataA(filenameCase,filenameControl)
+pro<-findBestSnpSubsetA(pro)
+pro<-fillIndexesFixed(pro)
+pro<-fillFixData(pro)
+pro<-fix2(pro)
+plot(density(pro$viWithShadow[(length(pro$viWithShadow)/2+1):length(pro$viWithShadow)]))
+abline(density(pro$viWithShadow[1:length(pro$viWithShadow)/2]),col='red')
 
 
-#' filenameCase<-"D:/workspace/data/WTCCC/bd"
-#' filenameControl<-"D:/workspace/data/WTCCC/1958bc_and_nbs_for_bd"
-#' pro<-loadInformativeDataA(filenameCase,filenameControl)
+filenameCase<-"D:/workspace/data/WTCCC/bd"
+filenameControl<-"D:/workspace/data/WTCCC/1958bc_and_nbs_for_bd"
+pro<-loadInformativeDataA(filenameCase,filenameControl)
 
 
-#' filenameCase<-"D:/workspace/data/WTCCC/bd"
-#' filenameControl<-"D:/workspace/data/WTCCC/1958bc_and_nbs_for_bd"
-#' pro<-loadInformativeDataA(filenameCase,filenameControl)
-#' pro<-findBestSnpSubsetA(pro)
-#' plot(pro$solution$minOobKInG,type='l',col='red')
-#' plot(pro$solution$minOobInG,type='l',col='blue')
+filenameCase<-"D:/workspace/data/WTCCC/bd"
+filenameControl<-"D:/workspace/data/WTCCC/1958bc_and_nbs_for_bd"
+pro<-loadInformativeDataA(filenameCase,filenameControl)
+pro<-findBestSnpSubsetA(pro)
+plot(pro$solution$minOobKInG,type='l',col='red')
+plot(pro$solution$minOobInG,type='l',col='blue')
 
 
-#' pro<-loadInformativeDataA(filenameCase,filenameControl)
-#' pro<-findBestSnpSubsetA(pro)
-#' pro<-fixA(pro)
-#' plot(density(pro$viShadow))
-#' abline(density(pro$viFix),col='red')
+pro<-loadInformativeDataA(filenameCase,filenameControl)
+pro<-findBestSnpSubsetA(pro)
+pro<-fixA(pro)
+plot(density(pro$viShadow))
+abline(density(pro$viFix),col='red')
 
 
-#' pro<-allAuto("D:/workspace/data/WTCCC/example_case.txt","D:/workspace/data/WTCCC/example_control.txt","D:/workspace/data/WTCCC/example")
-#' pro<-allAuto("D:/workspace/data/WTCCC/bd","D:/workspace/data/WTCCC/1958bc_and_nbs_for_bd","D:/workspace/data/WTCCC/result_bd")
-#' pro<-allAuto("D:/workspace/data/WTCCC/cad","D:/workspace/data/WTCCC/1958bc_and_nbs_for_cad","D:/workspace/data/WTCCC/result_cad")
-#' pro<-allAuto("D:/workspace/data/WTCCC/cad","D:/workspace/data/WTCCC/1958bc_and_nbs_for_cd","D:/workspace/data/WTCCC/result_cd")
+pro<-allAuto("D:/workspace/data/WTCCC/example_case.txt","D:/workspace/data/WTCCC/example_control.txt","D:/workspace/data/WTCCC/example")
+pro<-allAuto("D:/workspace/data/WTCCC/bd","D:/workspace/data/WTCCC/1958bc_and_nbs_for_bd","D:/workspace/data/WTCCC/result_bd")
+pro<-allAuto("D:/workspace/data/WTCCC/cad","D:/workspace/data/WTCCC/1958bc_and_nbs_for_cad","D:/workspace/data/WTCCC/result_cad")
+pro<-allAuto("D:/workspace/data/WTCCC/cad","D:/workspace/data/WTCCC/1958bc_and_nbs_for_cd","D:/workspace/data/WTCCC/result_cd")
+pro<-allAuto("D:/workspace/data/WTCCC/ht","D:/workspace/data/WTCCC/1958bc_and_nbs_for_ht","D:/workspace/data/WTCCC/result_ht")
+pro<-allAuto("D:/workspace/data/WTCCC/ra","D:/workspace/data/WTCCC/1958bc_and_nbs_for_ra","D:/workspace/data/WTCCC/result_ra")
+pro<-allAuto("D:/workspace/data/WTCCC/t1d","D:/workspace/data/WTCCC/1958bc_and_nbs_for_t1d","D:/workspace/data/WTCCC/result_t1d")
+pro<-allAuto("D:/workspace/data/WTCCC/t2d","D:/workspace/data/WTCCC/1958bc_and_nbs_for_t2d","D:/workspace/data/WTCCC/result_t2d")
 
 
-#' rf<-testSubsetInPro(pro)
-#' print(rf)
+rf<-testSubsetInPro(pro)
+print(rf)
